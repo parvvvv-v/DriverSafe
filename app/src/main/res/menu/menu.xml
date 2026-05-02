@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"/>
+    <item android:title="History"
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/history_svgrepo_com"/>
+    <item android:title="Add Document"
+        android:id="@+id/addDocumentFragment"
+        android:icon="@drawable/add_folder_svgrepo_com"/>
+    <item android:title="View Document"
+        android:id="@+id/viewFragment"
+        android:icon="@drawable/documents_files_and_folders_svgrepo_com"/>
+    <item android:title="Profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile_round_1342_svgrepo_com"/>
+</menu>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_profile_gradient"
+    tools:context=".Fragments.ProfileFragment">
+    <!-- Header -->
+
+
+    <ImageView
+        android:id="@+id/bac"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:src="@drawable/backbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/editbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:fontFamily="sans-serif-medium"
+        android:text="Edit"
+        android:textColor="#1D1D1D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.05"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Subheading -->
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit your profile details"
+        android:textColor="#EAEAEA"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Profile Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="32dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        android:background="@drawable/bg_card_glass"
+        app:layout_constraintTop_toBottomOf="@id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="533dp"
+            android:layout_marginTop="-30dp"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Name Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Name"
+                android:textColor="#BDBDBD"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/profilename"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input_glass"
+                android:fontFamily="sans-serif"
+                android:paddingStart="16dp"
+                android:text="Harsh Agrawal"
+                android:textColor="#0F2027"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Vehicle No -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Vehicle Number"
+                android:textColor="#BDBDBD"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/vehiclenumber"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input_glass"
+                android:fontFamily="sans-serif"
+                android:paddingStart="16dp"
+                android:text="MP65S6501"
+                android:textColor="#0F2027"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Phone No -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Phone Number"
+                android:textColor="#BDBDBD"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input_glass"
+                android:fontFamily="sans-serif"
+                android:paddingStart="16dp"
+                android:text="+91 9876543210"
+                android:textColor="#0F2027"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <!-- Gender -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Gender"
+                android:textColor="#BDBDBD"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input_glass"
+                android:paddingStart="16dp"
+                android:spinnerMode="dropdown" />
+
+            <!-- Date of Birth -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Date of Birth"
+                android:textColor="#BDBDBD"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/dobentry"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input_glass"
+                android:focusable="false"
+                android:fontFamily="sans-serif"
+                android:hint="DD/MM/YYYY"
+                android:inputType="none"
+                android:paddingStart="16dp"
+                android:textColor="#0F2027"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Save Info Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveinfobutton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:text="Save Information"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A1A"
+        android:fontFamily="sans-serif-black"
+        android:background="@drawable/bg_button_glow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

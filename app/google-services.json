@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "735229000727",
+    "firebase_url": "https://driversafe-fcfa2-default-rtdb.firebaseio.com",
+    "project_id": "driversafe-fcfa2",
+    "storage_bucket": "driversafe-fcfa2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735229000727:android:87282b67183f08c3d0b052",
+        "android_client_info": {
+          "package_name": "com.example.driversafe2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAndyPPk5CuU3V7NNra3m_jFiqKEPGcQd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
